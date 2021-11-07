@@ -41,7 +41,9 @@ public class ThreadThi extends Thread {
                 String SECRET_KEY = "stackjava.com.if";         
                 String encrypted = AES.encrypt(tr, SECRET_KEY);
                 System.out.println(tr);
-                dos.writeUTF(tr);
+                System.out.println("mã hóa: "+encrypted);
+                
+                dos.writeUTF(encrypted);
                 dos.flush();
 
             }

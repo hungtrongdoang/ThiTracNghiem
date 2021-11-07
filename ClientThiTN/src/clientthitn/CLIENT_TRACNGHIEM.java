@@ -310,8 +310,9 @@ public final class CLIENT_TRACNGHIEM extends javax.swing.JFrame {
 
             String strTN = AES.decrypt(strAES, SECRET_KEY);
             System.out.println(strAES);
+            
             System.out.println(strTN);
-            String[] arrStr = strAES.split("///");
+            String[] arrStr = strTN.split("///");
             List<CauHoi> listCH = new ArrayList<CauHoi>();
 
             int i = 0;
